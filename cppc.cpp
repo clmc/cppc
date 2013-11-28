@@ -9,6 +9,9 @@ using namespace std;
    purpose of learning
 */
 
+class outputCL{
+    public:
+
 void asciiPrint(){
 	cout << endl << " ▟██▖▐▙█▙ ▐▙█▙  ▟██▖\n";
 	cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛  ▘\n";
@@ -42,6 +45,8 @@ void proInfo(){
 void invalCmd(){
     cout << "Unrecognized command. \n" << endl << endl;
 }
+// end class
+};
 
 int main()
 {
@@ -52,11 +57,13 @@ int main()
 
 	proName = "cppc";
 	proVer = "0.1";
+	outputCL funCL;
 
 	cout << "Welcome to "<< proName <<"!" << endl;
 	for (int i = 0; i < 1;)
 	{
-		cppcMenu();
+	    
+		funCL.cppcMenu();
 //		cout << "..:\n";
 		cin >> operIn;
 
@@ -108,7 +115,7 @@ int main()
 
 	else if (operIn == 'v')
 	{
-		asciiPrint();
+		funCL.asciiPrint();
 		cout << endl << "      "<< proName <<" "<< proVer <<"\n" << endl;
 	}
 
@@ -119,12 +126,12 @@ int main()
 
 	else if (operIn == 'i')
 	{
-		proInfo();
+		funCL.proInfo();
 	}
 
 	else 
 	{
-		invalCmd();
+		funCL.invalCmd();
 	}
 
 	}// moved to here !!
