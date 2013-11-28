@@ -1,4 +1,4 @@
 cppc
 ====
 
-C++ calculator
+C++ calculator for *nix
