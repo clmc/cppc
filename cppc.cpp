@@ -2,6 +2,27 @@
 
 using namespace std;
 
+void asciiPrint(){
+		cout << endl << " ▟██▖▐▙█▙ ▐▙█▙  ▟██▖\n";
+		cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛  ▘\n";
+		cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
+		cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
+		cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘  ▝▀▀\n";
+		cout << "     ▐▌   ▐▌\n" << endl  << endl;
+}
+
+void cppcMenu(){
+	cout << "Please select the task you desire\n";
+	cout << "a - addition\n";
+	cout << "s - subtraction\n";
+	cout << "m - multiplication\n";
+	cout << "d - division\n";
+	cout << "v - print version info\n";
+	cout << "i - print extended info\n";
+	cout << "q - quit the program\n";
+	cout << "~--------------------~" << endl;
+}
+
 int main()
 {
 
@@ -15,15 +36,7 @@ int main()
 	cout << "Welcome to "<< proName <<"!" << endl;
 	for (int i = 0; i < 1;)
 	{
-		cout << "Please select the task you desire\n";
-		cout << "a - addition\n";
-		cout << "s - subtraction\n";
-		cout << "m - multiplication\n";
-		cout << "d - division\n";
-		cout << "v - print version info\n";
-		cout << "i - print extended info\n";
-		cout << "q - quit the program\n";
-		cout << "~--------------------~" << endl;
+		cppcMenu();
 //		cout << "..:\n";
 		cin >> operIn;
 
@@ -75,12 +88,7 @@ int main()
 
 	else if (operIn == 'v')
 	{
-		cout << endl << " ▟██▖▐▙█▙ ▐▙█▙  ▟██▖\n";
-		cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛  ▘\n";
-		cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
-		cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
-		cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘  ▝▀▀\n";
-		cout << "     ▐▌   ▐▌\n" << endl  << endl;
+		asciiPrint();
 		cout << endl << "      "<< proName <<" "<< proVer <<"\n" << endl;
 	}
 
