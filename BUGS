@@ -1,0 +1,11 @@
+// cppc is not intended for use by ANYONE
+these bugs are documented merely for my
+own personal use. Again, this program is
+extremely primitive and buggy and non-
+functional.
+
+
+1) Upon entering multiple recognized commands at once, both
+will be interpreted in a row and can potentially lead to loops
+if calculating problems is one of the commands. ASCII print and
+extended info run and do not present the loop.
