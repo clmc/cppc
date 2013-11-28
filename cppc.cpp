@@ -45,8 +45,7 @@ void proInfo(){
 void invalCmd(){
     cout << "Unrecognized command. \n" << endl << endl;
 }
-// end class
-};
+}; // end class
 
 int main()
 {
