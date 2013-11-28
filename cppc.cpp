@@ -39,6 +39,10 @@ void proInfo(){
 	cout << "division work presently.\n" << endl << endl;
 }
 
+void invalCmd(){
+    cout << "Unrecognized command. \n" << endl << endl;
+}
+
 int main()
 {
 
@@ -120,7 +124,7 @@ int main()
 
 	else 
 	{
-		cout << "Unrecognized command. \n" << endl << endl;
+		invalCmd();
 	}
 
 	}// moved to here !!
