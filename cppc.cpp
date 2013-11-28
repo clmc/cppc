@@ -2,13 +2,20 @@
 
 using namespace std;
 
+/* functions are below,
+   not necessarily for
+   optimization but
+   instead for the
+   purpose of learning
+*/
+
 void asciiPrint(){
-		cout << endl << " ▟██▖▐▙█▙ ▐▙█▙  ▟██▖\n";
-		cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛  ▘\n";
-		cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
-		cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
-		cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘  ▝▀▀\n";
-		cout << "     ▐▌   ▐▌\n" << endl  << endl;
+	cout << endl << " ▟██▖▐▙█▙ ▐▙█▙  ▟██▖\n";
+	cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛  ▘\n";
+	cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
+	cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
+	cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘  ▝▀▀\n";
+	cout << "     ▐▌   ▐▌\n" << endl  << endl;
 }
 
 void cppcMenu(){
@@ -21,6 +28,15 @@ void cppcMenu(){
 	cout << "i - print extended info\n";
 	cout << "q - quit the program\n";
 	cout << "~--------------------~" << endl;
+}
+
+void proInfo(){
+	cout << endl << endl << "cppc is a CLI calculator written entirely in C++\n";
+	cout << "for the purpose of being run on any *nix OS.\n" << endl;
+	cout << "Current cppc version is 0.0.1.\n" << endl;
+	cout << "Functionality at the moment is limited; only\n";
+	cout << "addition, subtraction, multiplication, and\n";
+	cout << "division work presently.\n" << endl << endl;
 }
 
 int main()
@@ -99,12 +115,7 @@ int main()
 
 	else if (operIn == 'i')
 	{
-		cout << endl << endl << "cppc is a CLI calculator written entirely in C++\n";
-		cout << "for the purpose of being run on any *nix OS.\n" << endl;
-		cout << "Current "<< proName <<" version is "<< proVer <<".\n" << endl;
-		cout << "Functionality at the moment is limited; only\n";
-		cout << "addition, subtraction, multiplication, and\n";
-		cout << "division work presently.\n" << endl << endl;
+		proInfo();
 	}
 
 	else 
