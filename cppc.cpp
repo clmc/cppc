@@ -133,7 +133,7 @@ int main()
 	{
 		funCL.squRt();
 		cin >> input1;
-		result = sqrt (input1) ;
+		result = sqrt (input1);
 		cout << ""<< input1 <<" squared is "<< result <<".\n";
 	}
 
