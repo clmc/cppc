@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -27,6 +28,7 @@ void cppcMenu(){
 	cout << "s - subtraction\n";
 	cout << "m - multiplication\n";
 	cout << "d - division\n";
+	cout << "r - square root\n";
 	cout << "v - print version info\n";
 	cout << "i - print extended info\n";
 	cout << "q - quit the program\n";
@@ -40,6 +42,10 @@ void proInfo(){
 	cout << "Functionality at the moment is limited; only\n";
 	cout << "addition, subtraction, multiplication, and\n";
 	cout << "division work presently.\n" << endl << endl;
+}
+
+void squRt(){
+	cout << "Please enter the number you wish to be squared.\n";
 }
 
 void invalCmd(){
@@ -118,14 +124,22 @@ int main()
 		cout << endl << "      "<< proName <<" "<< proVer <<"\n" << endl;
 	}
 
-	else if (operIn == 'q')
-	{
-		break;
-	}
-
 	else if (operIn == 'i')
 	{
 		funCL.proInfo();
+	}
+
+	else if (operIn == 'r')
+	{
+		funCL.squRt();
+		cin >> input1;
+		result = sqrt (input1) ;
+		cout << ""<< input1 <<" squared is "<< result <<".\n";
+	}
+
+	else if (operIn == 'q')
+	{
+		break;
 	}
 
 	else 
