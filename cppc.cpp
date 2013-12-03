@@ -38,14 +38,14 @@ void cppcMenu(){
 void proInfo(){
 	cout << endl << endl << "cppc is a CLI calculator written entirely in C++\n";
 	cout << "for the purpose of being run on any *nix OS.\n" << endl;
-	cout << "Current cppc version is 0.0.1.\n" << endl;
+	cout << "Current cppc version is 0.1.3.\n" << endl;
 	cout << "Functionality at the moment is limited; only\n";
 	cout << "addition, subtraction, multiplication, and\n";
 	cout << "division work presently.\n" << endl << endl;
 }
 
 void squRt(){
-	cout << "Please enter the number you wish to be squared.\n";
+	cout << "Please enter the number you wish to be squared: \n";
 }
 
 void invalCmd(){
@@ -61,7 +61,7 @@ int main()
 	int input1, input2, result;
 
 	proName = "cppc";
-	proVer = "0.1";
+	proVer = "0.1.3";
 	outputCL funCL;
 
 	cout << "Welcome to "<< proName <<"!" << endl;
@@ -121,7 +121,7 @@ int main()
 	else if (operIn == 'v')
 	{
 		funCL.asciiPrint();
-		cout << endl << "      "<< proName <<" "<< proVer <<"\n" << endl;
+		cout << endl << "    "<< proName <<" "<< proVer <<"\n" << endl;
 	}
 
 	else if (operIn == 'i')
