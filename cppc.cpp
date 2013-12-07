@@ -40,8 +40,8 @@ void proInfo(){
 	cout << "for the purpose of being run on any *nix OS.\n" << endl;
 	cout << "Current cppc version is 0.1.3.\n" << endl;
 	cout << "Functionality at the moment is limited; only\n";
-	cout << "addition, subtraction, multiplication, and\n";
-	cout << "division work presently.\n" << endl << endl;
+	cout << "addition, subtraction, multiplication,\n";
+	cout << "division, and square root work presently.\n" << endl << endl;
 }
 
 void squRt(){
