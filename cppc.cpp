@@ -1,8 +1,6 @@
 #include <iostream>
 #include <math.h>
 
-using namespace std;
-
 /* functions are below,
    not necessarily for
    optimization but
@@ -14,49 +12,49 @@ class outputCL{
     public:
 
 void asciiPrint(){
-	cout << endl << " ▟██▖▐▙█▙ ▐▙█▙  ▟██▖\n";
-	cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛  ▘\n";
-	cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
-	cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
-	cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘  ▝▀▀\n";
-	cout << "     ▐▌   ▐▌\n" << endl  << endl;
+    std::cout << std::endl << " ▟██▖▐▙█▙ ▐▙█▙  ▟██▖\n";
+    std::cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛  ▘\n";
+    std::cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
+    std::cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
+    std::cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘  ▝▀▀\n";
+    std::cout << "     ▐▌   ▐▌\n" << std::endl  << std::endl;
 }
 
 void cppcMenu(){
-	cout << "Please select the task you desire\n";
-	cout << "a - addition\n";
-	cout << "s - subtraction\n";
-	cout << "m - multiplication\n";
-	cout << "d - division\n";
-	cout << "r - square root\n";
-	cout << "v - print version info\n";
-	cout << "i - print extended info\n";
-	cout << "q - quit the program\n";
-	cout << "~--------------------~" << endl;
+    std::cout << "Please select the task you desire\n";
+    std::cout << "a - addition\n";
+    std::cout << "s - subtraction\n";
+    std::cout << "m - multiplication\n";
+    std::cout << "d - division\n";
+    std::cout << "r - square root\n";
+    std::cout << "v - print version info\n";
+    std::cout << "i - print extended info\n";
+    std::cout << "q - quit the program\n";
+    std::cout << "~--------------------~" << std::endl;
 }
 
 void proInfo(){
-	cout << endl << endl << "cppc is a CLI calculator written entirely in C++\n";
-	cout << "for the purpose of being run on any *nix OS.\n" << endl;
-	cout << "Current cppc version is 0.1.3.\n" << endl;
-	cout << "Functionality at the moment is limited; only\n";
-	cout << "addition, subtraction, multiplication,\n";
-	cout << "division, and square root work presently.\n" << endl << endl;
+    std::cout << std::endl << std::endl << "cppc is a CLI calculator written entirely in C++\n";
+    std::cout << "for the purpose of being run on any *nix OS.\n" << std::endl;
+    std::cout << "Current cppc version is 0.1.3.\n" << std::endl;
+    std::cout << "Functionality at the moment is limited; only\n";
+    std::cout << "addition, subtraction, multiplication,\n";
+    std::cout << "division, and square root work presently.\n" << std::endl << std::endl;
 }
 
 void squRt(){
-	cout << "Please enter the number you wish to be squared: \n";
+    std::cout << "Please enter the number you wish to be squared: \n";
 }
 
 void invalCmd(){
-    cout << "Unrecognized command. \n" << endl << endl;
+    std::cout << "Unrecognized command. \n" << std::endl << std::endl;
 }
 }; // end class
 
 int main()
 {
 
-	string proName, proVer;
+        std::string proName, proVer;
 	char operIn;
 	int input1, input2, result;
 
@@ -64,64 +62,64 @@ int main()
 	proVer = "0.1.3";
 	outputCL funCL;
 
-	cout << "Welcome to "<< proName <<"!" << endl;
+	std::cout << "Welcome to "<< proName <<"!" << std::endl;
 	for (int i = 0; i < 1;)
 	{
 	    
 		funCL.cppcMenu();
-//		cout << "..:\n";
-		cin >> operIn;
+//		std::cout << "..:\n";
+		std::cin >> operIn;
 
 // bracket was closed here !!
 
 	if (operIn == 'a')
 	{
-		cout << endl << "Please enter your first number: \n";
-		cin >> input1;
-		cout << endl << "Please enter your second number: \n";
-		cin >> input2;
+	    std::cout << std::endl << "Please enter your first number: \n";
+	    std::cin >> input1;
+	    std::cout << std::endl << "Please enter your second number: \n";
+	    std::cin >> input2;
 
 		result = input1 + input2;
-		cout << endl << "Your sum is "<< result <<".\n" << endl;	
+		std::cout << std::endl << "Your sum is "<< result <<".\n" << std::endl;
 	}
 
 	else if (operIn == 's')
 	{
-		cout << endl << "Please enter the number to be subtracted from: \n";
-		cin >> input1;
-		cout << endl << "Please enter the number you are subtracting: \n";
-		cin >> input2;
+	    std::cout << std::endl << "Please enter the number to be subtracted from: \n";
+	    std::cin >> input1;
+	    std::cout << std::endl << "Please enter the number you are subtracting: \n";
+	    std::cin >> input2;
 
 		result = input1 - input2;
-		cout << endl << "The difference is "<< result <<".\n" << endl;	
+		std::cout << std::endl << "The difference is "<< result <<".\n" << std::endl;
 	}
 
 	else if (operIn == 'm')
 	{
-		cout << endl << "Please enter your first factor: \n";
-		cin >> input1;
-		cout << endl << "Please enter your second factor: \n";
-		cin >> input2;
+	    std::cout << std::endl << "Please enter your first factor: \n";
+	    std::cin >> input1;
+	    std::cout << std::endl << "Please enter your second factor: \n";
+	    std::cin >> input2;
 
 		result = input1 * input2;
-		cout << endl << "The product is "<< result <<".\n" << endl;
+		std::cout << std::endl << "The product is "<< result <<".\n" << std::endl;
 	}
 
 	else if (operIn == 'd')
 	{
-		cout << endl << "Please enter the dividend: \n";
-		cin >> input1;
-		cout << endl << "Please enter the divisor: \n";
-		cin >> input2;
+	    std::cout << std::endl << "Please enter the dividend: \n";
+	    std::cin >> input1;
+	    std::cout << std::endl << "Please enter the divisor: \n";
+	    std::cin >> input2;
 
 		result = input1 / input2;
-		cout << endl << "The quotient is "<< result <<".\n" << endl;
+		std::cout << std::endl << "The quotient is "<< result <<".\n" << std::endl;
 	}
 
 	else if (operIn == 'v')
 	{
 		funCL.asciiPrint();
-		cout << endl << "    "<< proName <<" "<< proVer <<"\n" << endl;
+		std::cout << std::endl << "    "<< proName <<" "<< proVer <<"\n" << std::endl;
 	}
 
 	else if (operIn == 'i')
@@ -132,9 +130,9 @@ int main()
 	else if (operIn == 'r')
 	{
 		funCL.squRt();
-		cin >> input1;
+		std::cin >> input1;
 		result = sqrt (input1);
-		cout << ""<< input1 <<" squared is "<< result <<".\n";
+		std::cout << ""<< input1 <<" squared is "<< result <<".\n";
 	}
 
 	else if (operIn == 'q')
