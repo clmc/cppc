@@ -118,31 +118,31 @@ int main()
 
 	else if (operIn == 'v')
 	{
-		funCL.asciiPrint();
-		std::cout << std::endl << "    "<< proName <<" "<< proVer <<"\n" << std::endl;
+	    funCL.asciiPrint();
+	    std::cout << std::endl << "    "<< proName <<" "<< proVer <<"\n" << std::endl;
 	}
 
 	else if (operIn == 'i')
 	{
-		funCL.proInfo();
+	    funCL.proInfo();
 	}
 
 	else if (operIn == 'r')
 	{
-		funCL.squRt();
-		std::cin >> input1;
-		result = sqrt (input1);
-		std::cout << ""<< input1 <<" squared is "<< result <<".\n";
+	    funCL.squRt();
+	    std::cin >> input1;
+	    result = sqrt (input1);
+	    std::cout << ""<< input1 <<" squared is "<< result <<".\n";
 	}
 
 	else if (operIn == 'q')
 	{
-		break;
+	    break;
 	}
 
 	else 
 	{
-		funCL.invalCmd();
+	    funCL.invalCmd();
 	}
 
 	}// moved to here !!
