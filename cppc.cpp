@@ -1,7 +1,11 @@
 #include <iostream>
 #include <math.h>
 
-/* functions are below,
+/* 
+   author: clmc
+   Mon Jan 20 14:26:19 EST 2014
+
+   functions are below,
    not necessarily for
    optimization but
    instead for the
