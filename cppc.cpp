@@ -8,7 +8,7 @@ public:
 	void asciiPrint(){
 		std::cout << std::endl << " ▟██▖▐▙█▙ ▐▙█▙ ▟██▖\n";
 		std::cout << "▐▛ ▘▐▛ ▜▌▐▛ ▜▌▐▛ ▘\n";
-		std::cout << "▐▌ ▐▌ ▐▌▐▌ ▐▌▐▌\n";
+		std::cout << "▐▌  ▐▌ ▐▌▐▌ ▐▌▐▌\n";
 		std::cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
 		std::cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘ ▝▀▀\n";
 		std::cout << " ▐▌ ▐▌\n" << std::endl << std::endl;
@@ -30,7 +30,7 @@ public:
 	void proInfo(){
 		std::cout << std::endl << std::endl << "cppc is a CLI calculator written entirely in C++\n";
 		std::cout << "for the purpose of being run on any *nix OS.\n" << std::endl;
-		std::cout << "Current cppc version is 0.1.3.\n" << std::endl;
+		std::cout << "Current cppc version is 0.1.8.\n" << std::endl;
 		std::cout << "Functionality at the moment is limited; only\n";
 		std::cout << "addition, subtraction, multiplication,\n";
 		std::cout << "division, and square root work presently.\n" << std::endl << std::endl;
@@ -52,7 +52,7 @@ int main()
 	int input1, input2, result;
 
 	proName = "cppc";
-	proVer = "0.1.3";
+	proVer = "0.1.8";
 	outputCL funCL;
 
 	
