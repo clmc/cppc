@@ -28,7 +28,7 @@ public:
 	}
 
 	void proInfo(){
-		std::cout << std::endl << std::endl << "cppc is a CLI calculator written entirely in C++\n";
+		std::cout << std::endl << "cppc is a CLI calculator written entirely in C++\n";
 		std::cout << "for the purpose of being run on any *nix OS.\n" << std::endl;
 		std::cout << "Current cppc version is 0.1.8.\n" << std::endl;
 		std::cout << "Functionality at the moment is limited; only\n";
@@ -37,11 +37,11 @@ public:
 	}
 
 	void squRt(){
-		std::cout << "Please enter the number you wish to be squared: \n";
+		std::cout << std::endl << "Please enter the number you wish to be squared: \n";
 	}
 
 	void invalCmd(){
-		std::cout << "Unrecognized command. \n" << std::endl << std::endl;
+		std::cout << std::endl << "Unrecognized command. \n" << std::endl << std::endl;
 	}
 }; // end class
 
@@ -126,7 +126,7 @@ int main()
 
 		else if (operIn == "q")
 		{
-		        std::cout << "exiting..." << std::endl;
+		        std::cout << "exiting cppc..." << std::endl;
 			//break;
 		}
 
