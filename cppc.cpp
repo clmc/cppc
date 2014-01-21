@@ -2,8 +2,6 @@
 #include <string>
 #include <math.h>
 
-using namespace std;
-
 class outputCL{
 public:
 
@@ -50,8 +48,7 @@ public:
 int main()
 {
 
-	std::string proName, proVer;
-	string operIn;
+	std::string proName, proVer, operIn;
 	int input1, input2, result;
 
 	proName = "cppc";
@@ -61,7 +58,7 @@ int main()
 	
 	do{
 		funCL.cppcMenu();
-		cin >> operIn;
+		std::cin >> operIn;
 		
 		if (operIn == "a")
 		{
@@ -129,7 +126,7 @@ int main()
 
 		else if (operIn == "q")
 		{
-			cout << "exiting..." << endl;
+		        std::cout << "exiting..." << std::endl;
 			//break;
 		}
 
