@@ -7,11 +7,11 @@ public:
 
 	void asciiPrint(){
 		std::cout << std::endl << " ▟██▖▐▙█▙ ▐▙█▙ ▟██▖\n";
-		std::cout << "▐▛ ▘▐▛ ▜▌▐▛ ▜▌▐▛ ▘\n";
-		std::cout << "▐▌  ▐▌ ▐▌▐▌ ▐▌▐▌\n";
+		std::cout << "▐▛ ▘ ▐▛ ▜▌▐▛ ▜▌▐▛ ▘\n";
+		std::cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
 		std::cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
-		std::cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘ ▝▀▀\n";
-		std::cout << " ▐▌ ▐▌\n" << std::endl << std::endl;
+		std::cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘  ▝▀▀\n";
+		std::cout << "     ▐▌   ▐▌\n" << std::endl << std::endl;
 	}
 
 	void cppcMenu(){
