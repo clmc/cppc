@@ -25,11 +25,11 @@ public:
 
 	void asciiPrint(){
 		cout << endl << " ▟██▖▐▙█▙ ▐▙█▙ ▟██▖\n";
-		cout << "▐▛ ▘ ▐▛ ▜▌▐▛ ▜▌▐▛ ▘\n";
-		cout << "▐▌ ▐▌ ▐▌▐▌ ▐▌▐▌\n";
+		cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛ ▘\n";
+		cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
 		cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
 		cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘ ▝▀▀\n";
-		cout << " ▐▌ ▐▌\n" << endl << endl;
+		cout << "     ▐▌   ▐▌\n" << endl << endl;
 	}
 
 	void cppcMenu(){
