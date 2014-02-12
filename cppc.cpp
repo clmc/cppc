@@ -49,7 +49,7 @@ public:
 	void proInfo(){
 		cout << endl << "cppc is a CLI calculator written entirely in C++\n";
 		cout << "for the purpose of being run on any *nix OS.\n\n";
-		cout << "Current cppc version is 0.1.8.\n\n";
+		cout << "Current cppc version is 0.2.\n\n";
 		cout << "Functionality at the moment is limited; only\n";
 		cout << "addition, subtraction, multiplication,\n";
 		cout << "division, and square root work presently.\n\n\n";
