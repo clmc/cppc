@@ -18,7 +18,7 @@
 * Updated by: https://github.com/ArnoldM904
 */
 
-using namespace std; // Added so you don't need to use "std::" a thousand times.
+using namespace std;
 
 class outputCL{
 public:
