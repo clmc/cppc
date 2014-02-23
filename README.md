@@ -1,9 +1,9 @@
 cppc
 ====
 
-C++ calculator for *nix
+C++ calculator for Unix
 
-Compile using clang++ or g++
+Compile using clang++ (or g++)
 
-I have tested this on OSX and GNU/Linux. It is my first real program 
+I have tested this on OSX and Arch Linux. It is my first real program 
 that does any sort of valuable function at all in C++.
