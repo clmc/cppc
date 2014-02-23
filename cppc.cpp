@@ -1,24 +1,9 @@
 #include <iostream>
 #include <string>
 #include <math.h>
-/*
-* Version 0.2 updates:
 
-* Added "using namespace std;" to remove the need of having "std::" in nearly every line.
-* Added "cube number" function
-* Added an extra "\n" to each problem at the end for readability.
-* Added extra comments for easier and quicker understanding.
-
-* Closed unnecessary gap between two inputs. (In other words, I took out the \n after each input for readability.)
-* On the above note, I didn't remove the space between input and answer, but you may want to.
-* Fixed formatting issues on all problems where a number was entered under the problem rather than after it. (Now looks cleaner.)
-* Replaced irrelevant "endl"s with a smaller extra "\n" instead.
-
-* Updated on: 2/12/2014
-* Updated by: https://github.com/ArnoldM904
-*/
-
-using namespace std;
+using std::cout;
+using std::endl;
 
 class outputCL{
 public:
@@ -39,7 +24,7 @@ public:
 		cout << "m - multiplication\n";
 		cout << "d - division\n";
 		cout << "r - square root\n";
-		cout << "c - cube number\n"; // Finds the cubed form of a number (IE: 5 cubed, or 5*5*5, is equal to 125.)
+		cout << "c - cube number\n";
 		cout << "v - print version info\n";
 		cout << "i - print extended info\n";
 		cout << "q - quit the program\n";
