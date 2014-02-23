@@ -2,8 +2,7 @@
 #include <string>
 #include <math.h>
 
-using std::cout;
-using std::endl;
+using namespace std;
 
 class outputCL{
 public:
