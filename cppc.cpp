@@ -116,7 +116,7 @@ int main()
 		else if (operIn == "v") // Print version info option
 		{
 			funCL.asciiPrint();
-			cout << endl << " " << proName << " " << proVer << "\n\n";
+			cout << endl << "      " << proName << " " << proVer << "\n\n";
 		}
 
 		else if (operIn == "i") // Print extended info option
