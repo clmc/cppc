@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <math.h>
+#include <cmath>
 
 using namespace std;
 
@@ -23,6 +23,7 @@ public:
 		cout << "m - multiplication\n";
 		cout << "d - division\n";
 		cout << "r - square root\n";
+		cout << "u - square number\n";
 		cout << "c - cube number\n";
 		cout << "v - print version info\n";
 		cout << "i - print extended info\n";
@@ -33,14 +34,18 @@ public:
 	void proInfo(){
 		cout << endl << "cppc is a CLI calculator written entirely in C++\n";
 		cout << "for the purpose of being run on any *nix OS.\n\n";
-		cout << "Current cppc version is 0.2.\n\n";
-		cout << "Functionality at the moment is limited; only\n";
-		cout << "addition, subtraction, multiplication,\n";
-		cout << "division, and square root work presently.\n\n\n";
+		cout << "Current cppc version is 0.3.\n\n";
+		cout << "Current functionality includes addition\n";
+		cout << "subtraction, multiplication, divison, square,\n";
+		cout << "square root, and cube.\n\n\n";
 	}
 
 	void squRt(){
-		cout << endl << "Please enter the number you wish to be squared: \n";
+		cout << endl << "Please enter the squared number to find it's root: \n";
+	}
+
+	void squareNum(){
+	    	cout << endl << "Please enter the number to be squared: \n";
 	}
 
 	void invalCmd(){
@@ -55,7 +60,7 @@ int main()
 	int input1, input2, result;
 
 	proName = "cppc";
-	proVer = "0.2"; 
+	proVer = "0.3"; 
 	outputCL funCL;
 
 
@@ -124,7 +129,7 @@ int main()
 			funCL.squRt();
 			cin >> input1;
 			result = sqrt(input1);
-			cout << "" << input1 << " squared is " << result << ".\n\n";
+			cout << "\nThe square root of " << input1 << " is " << result << ".\n\n";
 		}
 
 		else if (operIn == "c") // Cube number option
@@ -135,6 +140,13 @@ int main()
 			cout << "\nThe cube of " << input1 << " is " << input2 << ".\n\n";
 		}
 
+		else if (operIn == "u")
+		{
+		    	funCL.squareNum();
+			cin >> input1;
+			result = input1 * input1;
+			cout << "\n" << input1 << " squared is " << result << ".\n\n";
+		}
 		else if (operIn == "q")
 		{
 			cout << "exiting cppc..." << endl;
