@@ -4,7 +4,7 @@
 
 using namespace std;
 
-class outputCL{
+class outputClass{
 public:
 
 	void asciiPrint(){
@@ -61,11 +61,11 @@ int main()
 
 	proName = "cppc";
 	proVer = "0.3"; 
-	outputCL funCL;
+	outputClass funClass;
 
 
 	do{
-		funCL.cppcMenu();
+		funClass.cppcMenu();
 		cin >> operIn;
 
 		if (operIn == "a") // Addition option
@@ -115,18 +115,18 @@ int main()
 
 		else if (operIn == "v") // Print version info option
 		{
-			funCL.asciiPrint();
+			funClass.asciiPrint();
 			cout << endl << "      " << proName << " " << proVer << "\n\n";
 		}
 
 		else if (operIn == "i") // Print extended info option
 		{
-			funCL.proInfo();
+			funClass.proInfo();
 		}
 
 		else if (operIn == "r") // Square root option
 		{
-			funCL.squRt();
+			funClass.squRt();
 			cin >> input1;
 			result = sqrt(input1);
 			cout << "\nThe square root of " << input1 << " is " << result << ".\n\n";
@@ -140,14 +140,14 @@ int main()
 			cout << "\nThe cube of " << input1 << " is " << input2 << ".\n\n";
 		}
 
-		else if (operIn == "u")
+		else if (operIn == "u") // Square number option
 		{
-		    	funCL.squareNum();
+		    	funClass.squareNum();
 			cin >> input1;
 			result = input1 * input1;
 			cout << "\n" << input1 << " squared is " << result << ".\n\n";
 		}
-		else if (operIn == "q")
+		else if (operIn == "q") // Quit the program
 		{
 			cout << "exiting cppc..." << endl;
 			//break;
@@ -155,7 +155,7 @@ int main()
 
 		else
 		{
-			funCL.invalCmd();
+			funClass.invalCmd();
 		}
 
 
