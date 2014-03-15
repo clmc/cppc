@@ -10,3 +10,8 @@ the main class, so as to avoid using math.h C lib.
 Any contirbution to square a number instead of finding its sqrt as an
 imported library function that is close to C++ std libs or as close as
 possible is the next logical step.
+
+====
+
+Entering a non-numerical value into the calculator when it prompts for
+a numerical value causes a nonending loop.
