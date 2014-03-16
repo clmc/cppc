@@ -49,7 +49,7 @@ public:
 	    	cout << endl << "Please enter the number to be squared: \n";
 	}
 
-	void invalCmd(){
+	void invalidCommand(){
 		cout << endl << "Unrecognized command. \n\n\n";
 	}
 }; // end class
@@ -156,7 +156,7 @@ int main()
 
 		else
 		{
-			funClass.invalCmd();
+			funClass.invalidCommand();
 		}
 
 
