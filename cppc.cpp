@@ -2,7 +2,8 @@
 #include <string>
 #include <cmath>
 
-using namespace std;
+using std::cout; using std::cin;
+using std::endl; using std::string;
 
 class outputClass{
 public:
@@ -31,16 +32,16 @@ public:
 		cout << "~--------------------~" << endl;
 	}
 
-	void proInfo(){
+	void programInfo(){
 		cout << endl << "cppc is a CLI calculator written entirely in C++\n";
 		cout << "for the purpose of being run on any *nix OS.\n\n";
-		cout << "Current cppc version is 0.3.\n\n";
+		cout << "Current cppc version is 0.3.8.\n\n";
 		cout << "Current functionality includes addition\n";
 		cout << "subtraction, multiplication, divison, square,\n";
 		cout << "square root, and cube.\n\n\n";
 	}
 
-	void squRt(){
+	void squareRoot(){
 		cout << endl << "Please enter the squared number to find it's root: \n";
 	}
 
@@ -56,19 +57,19 @@ public:
 int main()
 {
 
-	string proName, proVer, operIn;
+	string programName, programVer, operation_Input;
 	int input1, input2, result;
 
-	proName = "cppc";
-	proVer = "0.3"; 
+	programName = "cppc";
+	programVer = "0.3.8"; 
 	outputClass funClass;
 
 
 	do{
 		funClass.cppcMenu();
-		cin >> operIn;
+		cin >> operation_Input;
 
-		if (operIn == "a") // Addition option
+		if (operation_Input == "a") // Addition option
 		{
 			cout << endl << "Please enter your first number: ";
 			cin >> input1;
@@ -80,7 +81,7 @@ int main()
 
 		}
 
-		else if (operIn == "s") // Subtraction option
+		else if (operation_Input == "s") // Subtraction option
 		{
 			cout << endl << "Please enter the number to be subtracted from: ";
 			cin >> input1;
@@ -91,7 +92,7 @@ int main()
 			cout << endl << "The difference is " << result << ".\n\n\n";
 		}
 
-		else if (operIn == "m") // Multiplication option
+		else if (operation_Input == "m") // Multiplication option
 		{
 			cout << endl << "Please enter your first factor: ";
 			cin >> input1;
@@ -102,7 +103,7 @@ int main()
 			cout << endl << "The product is " << result << ".\n\n\n";
 		}
 
-		else if (operIn == "d") // Division option
+		else if (operation_Input == "d") // Division option
 		{
 			cout << endl << "Please enter the dividend: ";
 			cin >> input1;
@@ -113,26 +114,26 @@ int main()
 			cout << endl << "The quotient is " << result << ".\n\n\n";
 		}
 
-		else if (operIn == "v") // Print version info option
+		else if (operation_Input == "v") // Print version info option
 		{
 			funClass.asciiPrint();
-			cout << endl << "      " << proName << " " << proVer << "\n\n";
+			cout << endl << "      " << programName << " " << programVer << "\n\n";
 		}
 
-		else if (operIn == "i") // Print extended info option
+		else if (operation_Input == "i") // Print extended info option
 		{
-			funClass.proInfo();
+			funClass.programInfo();
 		}
 
-		else if (operIn == "r") // Square root option
+		else if (operation_Input == "r") // Square root option
 		{
-			funClass.squRt();
+			funClass.squareRoot();
 			cin >> input1;
 			result = sqrt(input1);
 			cout << "\nThe square root of " << input1 << " is " << result << ".\n\n";
 		}
 
-		else if (operIn == "c") // Cube number option
+		else if (operation_Input == "c") // Cube number option
 		{
 			cout << "\nEnter number you wish to be cubed: ";
 			cin >> input1;
@@ -140,16 +141,16 @@ int main()
 			cout << "\nThe cube of " << input1 << " is " << input2 << ".\n\n";
 		}
 
-		else if (operIn == "u") // Square number option
+		else if (operation_Input == "u") // Square number option
 		{
 		    	funClass.squareNum();
 			cin >> input1;
 			result = input1 * input1;
 			cout << "\n" << input1 << " squared is " << result << ".\n\n";
 		}
-		else if (operIn == "q") // Quit the program
+		else if (operation_Input == "q") // Quit the program
 		{
-			cout << "exiting cppc..." << endl;
+			cout << "Exiting cppc." << endl;
 			//break;
 		}
 
@@ -159,6 +160,6 @@ int main()
 		}
 
 
-	} while (operIn != "q");
+	} while (operation_Input != "q");
 
 }
