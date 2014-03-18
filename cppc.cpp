@@ -35,23 +35,28 @@ public:
 	void programInfo(){
 		cout << endl << "cppc is a CLI calculator written entirely in C++\n";
 		cout << "for the purpose of being run on any *nix OS.\n\n";
-		cout << "Current cppc version is 0.3.8.\n\n";
+		cout << "Current cppc version is 0.3.9.\n\n";
 		cout << "Current functionality includes addition\n";
 		cout << "subtraction, multiplication, divison, square,\n";
 		cout << "square root, and cube.\n\n\n";
 	}
 
 	void squareRoot(){
-		cout << endl << "Please enter the squared number to find it's root: \n";
+		cout << "\nPlease enter the squared number to find it's root: ";
 	}
 
 	void squareNum(){
-	    	cout << endl << "Please enter the number to be squared: \n";
+	    	cout << "\nPlease enter the number to be squared: ";
+	}
+
+        void cubeNum(){
+		cout << "\nPlease enter the number to be cubed: "; 
 	}
 
 	void invalidCommand(){
-		cout << endl << "Unrecognized command. \n\n\n";
+		cout << "\nUnrecognized command. \n\n\n";
 	}
+	
 }; // end class
 
 int main()
@@ -61,7 +66,7 @@ int main()
 	int input1, input2, result;
 
 	programName = "cppc";
-	programVer = "0.3.8"; 
+	programVer = "0.3.9"; 
 	outputClass funClass;
 
 
@@ -135,7 +140,7 @@ int main()
 
 		else if (operation_Input == "c") // Cube number option
 		{
-			cout << "\nEnter number you wish to be cubed: ";
+		        funClass.cubeNum();
 			cin >> input1;
 			input2 = (pow(input1, 3));
 			cout << "\nThe cube of " << input1 << " is " << input2 << ".\n\n";
@@ -151,12 +156,11 @@ int main()
 		else if (operation_Input == "q") // Quit the program
 		{
 			cout << "Exiting cppc." << endl;
-			//break;
 		}
 
 		else
 		{
-			funClass.invalidCommand();
+			funClass.invalidCommand(); // if there is an invalid entry, tell user 
 		}
 
 
