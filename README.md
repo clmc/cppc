@@ -1,6 +1,5 @@
 cppc
 ====
-
 C++ calculator for Unix
 
 Compile using clang++ (or g++)
@@ -12,6 +11,7 @@ Planned Features
 ====
  * Mean and Median
  * Percentage
+ * ncurses UI
  * Cleaned up code ;)
 
 Credits

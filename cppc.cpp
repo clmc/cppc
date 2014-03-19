@@ -3,18 +3,17 @@
 #include <cmath>
 
 using std::cout; using std::cin;
-using std::endl; using std::string;
 
 class outputClass{
 public:
 
 	void asciiPrint(){
-		cout << endl << " ▟██▖▐▙█▙ ▐▙█▙ ▟██▖\n";
+		cout << "\n ▟██▖▐▙█▙ ▐▙█▙ ▟██▖\n";
 		cout << "▐▛  ▘▐▛ ▜▌▐▛ ▜▌▐▛ ▘\n";
 		cout << "▐▌   ▐▌ ▐▌▐▌ ▐▌▐▌\n";
 		cout << "▝█▄▄▌▐█▄█▘▐█▄█▘▝█▄▄▌\n";
 		cout << " ▝▀▀ ▐▌▀▘ ▐▌▀▘  ▝▀▀\n";
-		cout << "     ▐▌   ▐▌\n" << endl << endl;
+		cout << "     ▐▌   ▐▌\n\n\n";
 	}
 
 	void cppcMenu(){
@@ -29,11 +28,11 @@ public:
 		cout << "v - print version info\n";
 		cout << "i - print extended info\n";
 		cout << "q - quit the program\n";
-		cout << "~--------------------~" << endl;
+		cout << "~--------------------~\n";
 	}
 
 	void programInfo(){
-		cout << endl << "cppc is a CLI calculator written entirely in C++\n";
+		cout << "\ncppc is a CLI calculator written entirely in C++\n";
 		cout << "for the purpose of being run on any *nix OS.\n\n";
 		cout << "Current cppc version is 0.3.9.\n\n";
 		cout << "Current functionality includes addition\n";
@@ -56,19 +55,24 @@ public:
 	void invalidCommand(){
 		cout << "\nUnrecognized command. \n\n\n";
 	}
+
+	void welcomeScreen(){
+		cout << "\nWelcome to cppc - the simple, lightweight C++ calculator\n";
+	}
 	
 }; // end class
 
 int main()
 {
 
-	string programName, programVer, operation_Input;
+    	std::string programName, programVer, operation_Input;
 	int input1, input2, result;
 
 	programName = "cppc";
 	programVer = "0.3.9"; 
 	outputClass funClass;
 
+	funClass.welcomeScreen();
 
 	do{
 		funClass.cppcMenu();
@@ -76,53 +80,53 @@ int main()
 
 		if (operation_Input == "a") // Addition option
 		{
-			cout << endl << "Please enter your first number: ";
+			cout << "\nPlease enter your first number: ";
 			cin >> input1;
 			cout << "Please enter your second number: ";
 			cin >> input2;
 
 			result = input1 + input2;
-			cout << endl << "Your sum is " << result << ".\n\n\n";
+			cout << "\nYour sum is " << result << ".\n\n\n";
 
 		}
 
 		else if (operation_Input == "s") // Subtraction option
 		{
-			cout << endl << "Please enter the number to be subtracted from: ";
+			cout << "\nPlease enter the number to be subtracted from: ";
 			cin >> input1;
 			cout << "Please enter the number you are subtracting: ";
 			cin >> input2;
 
 			result = input1 - input2;
-			cout << endl << "The difference is " << result << ".\n\n\n";
+			cout << "\nThe difference is " << result << ".\n\n\n";
 		}
 
 		else if (operation_Input == "m") // Multiplication option
 		{
-			cout << endl << "Please enter your first factor: ";
+			cout << "\nPlease enter your first factor: ";
 			cin >> input1;
 			cout << "Please enter your second factor: ";
 			cin >> input2;
 
 			result = input1 * input2;
-			cout << endl << "The product is " << result << ".\n\n\n";
+			cout << "\nThe product is " << result << ".\n\n\n";
 		}
 
 		else if (operation_Input == "d") // Division option
 		{
-			cout << endl << "Please enter the dividend: ";
+			cout << "\nPlease enter the dividend: ";
 			cin >> input1;
 			cout << "Please enter the divisor: ";
 			cin >> input2;
 
 			result = input1 / input2;
-			cout << endl << "The quotient is " << result << ".\n\n\n";
+			cout << "\nThe quotient is " << result << ".\n\n\n";
 		}
 
 		else if (operation_Input == "v") // Print version info option
 		{
 			funClass.asciiPrint();
-			cout << endl << "      " << programName << " " << programVer << "\n\n";
+			cout << "\n      " << programName << " " << programVer << "\n\n";
 		}
 
 		else if (operation_Input == "i") // Print extended info option
@@ -155,12 +159,12 @@ int main()
 		}
 		else if (operation_Input == "q") // Quit the program
 		{
-			cout << "Exiting cppc." << endl;
+			cout << "Exiting cppc.\n";
 		}
 
 		else
 		{
-			funClass.invalidCommand(); // if there is an invalid entry, tell user 
+			funClass.invalidCommand(); // If there is an invalid entry, tell user 
 		}
 
 
