@@ -16,5 +16,5 @@ Planned Features
 
 Credits
 ====
-* clmc - majority of code
-* marnold904 - cleaning up code and adding function prior to version 3
+ * clmc - majority of code
+ * marnold904 - cube number functionality
