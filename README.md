@@ -4,15 +4,19 @@ C++ calculator for Unix
 
 Compile using clang++ (or g++)
 
-I have tested this on OSX and Gentoo. It is my first real program 
-that does any sort of valuable function at all in C++.
+I have tested this on OSX, Gentoo, and FreeBSD. It was my first
+real program that does any sort of valuable function at all in C++.
+
 
 Planned Features
 ====
  * Mean and Median
- * Percentage
  * ncurses UI
  * Cleaned up code ;)
+
+Completed Landmarks
+====
+ * Percentage
 
 Credits
 ====

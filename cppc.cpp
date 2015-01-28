@@ -26,6 +26,7 @@ public:
 		cout << "u - square number\n";
 		cout << "c - cube number\n";
 		cout << "p - multiply by power\n";
+		cout << "e - find specific percent\n";
 		cout << "v - print version info\n";
 		cout << "i - print extended info\n";
 		cout << "q - quit the program\n";
@@ -55,6 +56,10 @@ public:
 
 	void powerNum(){
 		cout << "\nPlease enter the number you wish to multiply: ";
+	}
+
+	void percentNum(){
+	    	cout << "\nPlease enter the number you would like a percentage of: ";
 	}
 
 	void invalidCommand(){
@@ -171,6 +176,16 @@ int main()
 			cin >> powerInput;
 			result = (pow(input1, powerInput));
 			cout << "\n" << input1 << " to the power of " << powerInput << " is " << result << "\n\n\n";
+		}
+
+		else if (operation_Input == "e") // Percentage option
+		{
+		    	funClass.percentNum();
+			cin >> input1;
+			cout << "Please enter the percentage you would like: ";
+			cin >> input2;
+			result = input1 * input2 / 100;
+			cout << "\n" << input2<< "% of " <<input1<< " is " << result << "\n\n\n";
 		}
 
 		else if (operation_Input == "q") // Quit the program
